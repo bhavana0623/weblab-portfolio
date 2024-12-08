@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      background: black;
+      color: #00ff00;
+    }
+
+    .brief {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background: #00ff00;
+      color: black;
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .content h1 {
+      font-size: 3em;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <div class="content">
+    <h1>About Us</h1>
+    <p class="brief">Welcome to our portfolio website! We are Team Dwayam, passionate developers, dedicated to bringing innovative ideas to life. Our journey started with a shared love for technology, and we aim to make an impact through the projects we create.</p>
+    <p class="brief">We are constantly learning, growing, and collaborating to achieve our goals. Feel free to explore our work and connect with us!</p>
+  </div>
+
+</body>
+</html>

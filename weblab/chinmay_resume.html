@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay R - Resume</title>
+  <style>
+    /* Base styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      background: black;
+      color: white;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      position: relative;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background: #00ff00;
+      color: black;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ff00;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      flex: 1 1 300px;
+      max-width: 300px;
+      padding-left: 50px;
+    }
+
+    .profile-section img {
+      width: 160px;
+      height: 170px;
+      border-radius: 50%;
+      border: 4px solid #00ff00;
+      box-shadow: 0 0 10px #00ff00;
+    }
+
+    .details-section {
+      flex: 2;
+    }
+
+    h1 {
+      color: #00ff00;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 30px; /* Increased margin for better spacing */
+      font-size: 1.5em;
+      border-bottom: 1px solid #00ff00;
+      padding-bottom: 10px; /* Ensures clear separation from the content */
+      color: #00ff00;
+      text-align: left; /* Aligns consistently with content */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    ul li i {
+      color: #00ff00;
+      margin-right: 10px;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .download-section {
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: black;
+      background: #00ff00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .download-btn:hover {
+      background: white;
+      color: black;
+      box-shadow: 0 0 10px #00ff00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Resume Container -->
+  <div class="container">
+    <!-- Profile Picture -->
+    <div class="profile-section">
+      <img src="./images/chinmay.jpeg" alt="Chinmay R">
+    </div>
+
+    <!-- Contact Details -->
+    <div class="details-section">
+      <h1>Chinmay R</h1>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:chinmay2004r@gmail.com">chinmay2004r@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +91 9876543210</p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/chinmay-r-b82b86250/">LinkedIn</a></p>
+    </div>
+  </div>
+
+  <!-- Resume Content -->
+  <div class="container">
+    <h2>Summary</h2>
+    <p>
+      Hello world! I am a second-year computer science engineering student with a passion for AI, ML, data science, programming, and telecommunications. I thrive on tackling complex problems and exploring innovative solutions in these fields.
+      Additionally, I am fascinated by blockchain technology and enjoy crafting visually appealing websites.
+    </p>
+
+    <h2>Education</h2>
+    <ul>
+      <li><i class="fas fa-graduation-cap"></i> B.E in Computer Science and Engineering, Jyothy Institute of Technology, Bangalore (Nov 2022 - Apr 2026)</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li><i class="fas fa-certificate"></i> AWS Academy Cloud Foundations, Amazon Web Services (Jan 2024 - Present)</li>
+      <li><i class="fas fa-certificate"></i> Udemy AI Certification (Dec 2023 - Present)</li>
+      <li><i class="fas fa-certificate"></i> The Joy of Computing Using Python, NPTEL (Oct 2023 - Present)</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><i class="fas fa-code"></i> Programming: Python, C, Java, JavaScript</li>
+      <li><i class="fas fa-desktop"></i> Web Development: HTML, CSS, JavaScript, Tailwind CSS</li>
+      <li><i class="fas fa-terminal"></i> Other Tools: Figma, Canva, Git</li>
+      <li><i class="fas fa-network-wired"></i> Languages: English, Hindi, Kannada</li>
+    </ul>
+  </div>
+
+  <!-- Download Section -->
+  <div class="download-section">
+    <a class="download-btn" href="./images/chinmay_resume.pdf" download>Download Resume</a>
+  </div>
+
+  <!-- Add FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
